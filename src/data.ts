@@ -112,7 +112,7 @@ export const portfolioData: PortfolioData = {
     phoneNote: "Protected for privacy (available on direct request / CV)",
     github: "https://github.com/bodymostafa1",
     linkedin: "https://www.linkedin.com/in/abdelrahman-mostafa-913368261/",
-    cvPath: "/Abdelrahman_Mostafa_CV.pdf",
+    cvPath: `${import.meta.env.BASE_URL}Abdelrahman_Mostafa_CV.pdf`,
     languages: [
       { language: "Arabic", level: "Native" },
       { language: "English", level: "C1 Advanced" },

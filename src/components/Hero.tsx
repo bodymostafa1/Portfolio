@@ -66,9 +66,9 @@ export const Hero: React.FC = () => {
             <div className="absolute -inset-1.5 bg-gradient-to-r from-brand-500 to-teal-400 rounded-3xl blur-lg opacity-40 group-hover:opacity-65 transition duration-500" />
             <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-2xl overflow-hidden border-2 border-white dark:border-slate-800 shadow-xl bg-slate-100 dark:bg-slate-900">
               <picture>
-                <source srcSet="/profile.webp" type="image/webp" />
+                <source srcSet={`${import.meta.env.BASE_URL}profile.webp`} type="image/webp" />
                 <img
-                  src="/profile.jpg"
+                  src={`${import.meta.env.BASE_URL}profile.jpg`}
                   alt={personal.name}
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                   loading="eager"
